@@ -1,0 +1,5 @@
+The correct output of the Dart expression ${"word".toUpperCase()} is:
+
+D) The output is - 'WORD'
+
+The expression calls the toUpperCase() method on the string "word", which converts all the characters in the string to uppercase.

@@ -1,0 +1,59 @@
+______________________________________________________________________
+What is Lambda Function and give example?
+__________________________________________
+
+A lambda function known as an anonymous function or a function
+literal, is a small and concise piece of code that can be used
+to define a function without a name. It is often used in functional
+programming to create higher-order functions, which are functions
+that take other functions as arguments or return functions as values.
+
+Lambda functions are usually defined inline, meaning that they are
+defined and used at the same time, without the need for a separate
+function definition. They are often used for simple operations that
+can be expressed in a few lines of code.
+
+Here's an example of a lambda function in Dart:
+void main() {
+  var numbers = [1, 2, 3, 4, 5];
+
+  // Using a lambda function to double each number in the list
+  var doubledNumbers = numbers.map((number) => number * 2);
+
+  print(doubledNumbers); // Prints [2, 4, 6, 8, 10]
+}
+______________________________________________________________________
+What Is Method Overriding In Dart and give example?
+____________________________________________________
+
+
+In Dart method overriding is a feature of object-oriented
+programming that allows a subclass to provide its own
+implementation of a method that is already defined in its
+superclass. The overriding method must have the same name
+return type, and parameters as the method it overrides
+but it can provide a different implementation.
+
+Here's an example of method overriding in Dart:
+
+class Animal {
+  void makeSound() {
+    print('The animal makes a sound');
+  }
+}
+
+class Dog extends Animal {
+  @override
+  void makeSound() {
+    print('The dog barks');
+  }
+}
+
+void main() {
+  var animal = Animal();
+  var dog = Dog();
+
+  animal.makeSound(); // Prints "The animal makes a sound"
+  dog.makeSound(); // Prints "The dog barks"
+}
+______________________________________________________________________
